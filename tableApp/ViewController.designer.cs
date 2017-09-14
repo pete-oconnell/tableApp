@@ -17,11 +17,20 @@ namespace tableApp
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIView HomeScreen { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView peteTable { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (HomeScreen != null) {
                 HomeScreen.Dispose ();
                 HomeScreen = null;
+            }
+
+            if (peteTable != null) {
+                peteTable.Dispose ();
+                peteTable = null;
             }
         }
     }

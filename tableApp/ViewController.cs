@@ -14,11 +14,11 @@ namespace tableApp
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            UITableView table;
-            table = new UITableView(View.Bounds);
+            //table = new UITableView(View.Bounds);
             string[] tableItems = new string[] { "test1", "test2", "test3" };
-            table.Source = new TableSource(tableItems, this);
-            Add(table);
+            peteTable.Source = new TableSource(tableItems, this);
+            //table.Source = new TableSource(tableItems, this);
+            //Add(table);
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
